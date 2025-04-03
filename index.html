@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Book Management System</h1>
+    </header>
+
+    <main>
+        <h2>📖 Book List</h2>
+        <table id="bookTable">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Genre</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+
+        <h2>➕ Add / Update Book</h2>
+        <form id="bookForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="year" placeholder="Year" required>
+            <input type="text" id="genre" placeholder="Genre" required>
+            <button type="button" onclick="addOrUpdateBook()">Save</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
